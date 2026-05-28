@@ -28,9 +28,9 @@
                         <li class="nav-item"><a class="nav-link active" href="#hero">首頁</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
                         <li class="nav-item"><a class="nav-link" href="#courses">課程成果</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#hobbies">興趣</a></li>
                         <li class="nav-item"><a class="nav-link" href="#gallery">相簿</a></li>
                         <li class="nav-item"><a class="nav-link" href="#skills">技能</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#hobbies">興趣</a></li>
                         <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
                         <li class="nav-item ms-2">
                             <!-- 進入Email -->
@@ -245,6 +245,40 @@
             </div>
         </div>
     </section>
+    <!-- 興趣 -->
+    <section id="hobbies" class="py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="fw-bold mb-0">❤️興趣愛好</h2>
+                <span class="text-muted label">我喜歡的偶像們😍 </span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="row g-4">
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2qkJkRmcgpdVhdEhz3GcFX?utm_source=generator" width="100%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0QVpt0SA3FRrPPYIjvI4eu?utm_source=generator" width="100%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7cvkZVHF0tLOfKc9q4pEuq?utm_source=generator" width="100%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <iframe src="https://player.bilibili.com/player.html?isOutside=true&bvid=BV1f2eoeqEzb&p=1" class="card h-100 border-0"></iframe>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=113148950479521&bvid=BV1EmtberEFE&cid=25889670166&p=1" class="card h-100 border-0"></iframe>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=116584806882133&bvid=BV1rHL56EEzQ&cid=38384240246&p=1" class="card h-100 border-0"></iframe>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=115661841891752&bvid=BV11Y2iBbEqt&cid=34505689532&p=1" class="card h-100 border-0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- 常見問題 FAQ -->
    	<section id="faq" class="py-5">
         <div class="container">
@@ -365,7 +399,11 @@
                 renderSkills(lifeSkills, "life-skills-list");
         </script>
     <!-- 股票走勢 -->
+    <p class="text-center text-muted mt-5 mb-2">國際股票走勢 漲跌顏色使用國際標準(自選股)</p>
     <script type="module" src="https://widgets.tradingview-widget.com/w/zh_TW/tv-ticker-tape.js"></script>
     <tv-ticker-tape symbols="NASDAQ:NVDA,NASDAQ:MSFT,NASDAQ:GOOG,NASDAQ:AAPL,NASDAQ:INTC,NYSE:TSM,TVC:GOLD"></tv-ticker-tape>
 </body>
 </html>
+
+
+
