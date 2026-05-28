@@ -33,6 +33,7 @@
                         <li class="nav-item"><a class="nav-link" href="#skills">技能</a></li>
                         <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
                         <li class="nav-item ms-2">
+                            <!-- 進入Email -->
                             <a class="btn btn-primary btn-sm px-3" href="mailto:candy030496@gmail.com">聯絡我</a>
                         </li>
                     </ul>
@@ -322,7 +323,7 @@
             </div>
         </div>
     </section>
-
+    <!-- 技能條JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script>
             const techSkills = [
@@ -363,5 +364,8 @@
                 renderSkills(techSkills, "tech-skills-list");
                 renderSkills(lifeSkills, "life-skills-list");
         </script>
+    <!-- 股票走勢 -->
+    <script type="module" src="https://widgets.tradingview-widget.com/w/zh_TW/tv-ticker-tape.js"></script>
+    <tv-ticker-tape symbols="NASDAQ:NVDA,NASDAQ:MSFT,NASDAQ:GOOG,NASDAQ:AAPL,NASDAQ:INTC,NYSE:TSM,TVC:GOLD"></tv-ticker-tape>
 </body>
 </html>
