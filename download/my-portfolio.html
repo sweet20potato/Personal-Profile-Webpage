@@ -71,6 +71,19 @@
             </div>
         </div>
     </section>
+    <!-- 關於我 -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4">關於我</h2>
+            <p class="text-center text-muted mb-5">
+                就讀於中國文化大學資訊工程系大一。
+                我選擇資⼯系是因為，想從中學習如何創造科技、如何把⾃⼰腦中所想的，變成實際會動的東西呈現在眼前；想了解更多科技能給這個世界帶來的可能性，想讓⾃⼰也能做出，能幫助這個世界進步的科技。
+            </p>
+            <p class="text-center text-muted mb-0">
+                我喜歡在各個領域探索，多了解⼀點未知的領域，想從中去了解，各個領域真正需要的是什麼，以解決問題作為核⼼，下去設計我⾃⼰的的作品。我希望能了解各種不同的東西、認識不同的領域，然後把我所感興趣的，跟我⾃⼰熱愛的、擅⻑的結合在⼀起。
+            </p>
+        </div>
+    </section>
     <!-- 課程成果 -->
     <section id="courses" class="py-5 bg-light">
         <div class="container">
@@ -361,16 +374,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script>
             const techSkills = [
-            { name: "HTML5",       pct: 60, label: "練習中 60%", color: "bg-info"  },
-            { name: "C++",        pct: 65, label: "練習中 65%", color: "bg-info"     },
-            { name: "Python", pct: 30, label: "練習中 30%", color: "bg-warning"  },
-            { name: "JAVA",  pct: 0, label: "待解鎖 0%", color: "bg-secondary"},
+            { name: "HTML5", pct: 60, label: "練習中 60%", color: "bg-info"  },
+            { name: "C++",   pct: 65, label: "練習中 65%", color: "bg-info"     },
+            { name: "Python",pct: 30, label: "練習中 30%", color: "bg-warning"  },
+            { name: "JAVA",  pct: 0,  label: "待解鎖 0%",  color: "bg-secondary"},
             ];
             const lifeSkills = [
-            { name: "煮飯", pct: 75, label: "很棒了 75%", color: "bg-success" },
+            { name: "煮飯",      pct: 75, label: "很棒了 75%", color: "bg-success" },
             { name: "做甜點",    pct: 45, label: "練習中 45%", color: "bg-info" },
             { name: "做手工",    pct: 40, label: "練習中 40%", color: "bg-primary" },
-            { name: "做追星物料",      pct: 20, label: "入門中 20%", color: "bg-warning"    },
+            { name: "做追星物料",pct: 20, label: "入門中 20%", color: "bg-warning"    },
             ];
 
             function renderSkill(skill) {
@@ -395,8 +408,13 @@
                 });
                 container.innerHTML = html;
                 }
-                renderSkills(techSkills, "tech-skills-list");
-                renderSkills(lifeSkills, "life-skills-list");
+            
+                fetch("skills.json")
+                    .then(response => response.json())
+                    .then(data => {
+                        renderSkills(data.techSkills, "tech-skills-list");
+                        renderSkills(data.lifeSkills, "life-skills-list");
+                    });
         </script>
     <!-- 股票走勢 -->
     <p class="text-center text-muted mt-5 mb-2">國際股票走勢 漲跌顏色使用國際標準(自選股)</p>
@@ -404,6 +422,3 @@
     <tv-ticker-tape symbols="NASDAQ:NVDA,NASDAQ:MSFT,NASDAQ:GOOG,NASDAQ:AAPL,NASDAQ:INTC,NYSE:TSM,TVC:GOLD"></tv-ticker-tape>
 </body>
 </html>
-
-
-
