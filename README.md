@@ -1,4 +1,4 @@
 # Personal-Profile-Webpage
 Course outcomes in Internet technology
 
-Download "download" file ,and open the "my-portfolio.html".
+Download "download" file, and use VS Code's Live sever to open the "my-portfolio.html".
