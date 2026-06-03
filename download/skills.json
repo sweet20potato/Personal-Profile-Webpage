@@ -1,0 +1,14 @@
+{
+    "techSkills" : [
+        { "name": "HTML5",  "pct": 60, "label": "練習中 60%", "color": "bg-info"  },
+        { "name": "C++",    "pct": 65, "label": "練習中 65%", "color": "bg-info"     },
+        { "name": "Python", "pct": 30, "label": "練習中 30%", "color": "bg-warning"  },
+        { "name": "JAVA",   "pct": 0,  "label": "待解鎖 0%",  "color": "bg-secondary"}
+    ],
+    "lifeSkills" : [
+            { "name": "煮飯",      "pct": 75, "label": "很棒了 75%", "color": "bg-success" },
+            { "name": "做甜點",    "pct": 45, "label": "練習中 45%", "color": "bg-info" },
+            { "name": "做手工",    "pct": 40, "label": "練習中 40%", "color": "bg-primary" },
+            { "name": "做追星物料", "pct": 20, "label": "入門中 20%", "color": "bg-warning"    }
+            ]
+}
